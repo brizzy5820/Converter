@@ -1,0 +1,125 @@
+body{
+    background: #7F00FF ;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    align-self: center;
+
+}
+.phase1{
+    display: flex;
+    width: 65%;
+    margin: 3.9em;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 2em;
+   /* height: 60%; */
+   gap: 1.1em;
+   border-radius: 0.7em;
+}
+select{
+    width: 100%;
+    border-radius: 0.4em;
+    border: 2px solid;
+    height: 3em;
+   
+} 
+.selectt span:hover{
+    background-color: #6c5ce7;
+    color: white;
+}
+.firstd{
+    display: flex;
+    justify-content: space-between;
+}
+.phase1 input{
+    height: 3em;
+    border-top-left-radius: 0.4em; 
+    border-bottom-left-radius: 0.4em; 
+    border: none;
+    width: 80%;
+    box-shadow: 0px 0px 0px 2px rgb(175, 174, 174);
+}
+.phase1cover{
+    width: 85vw;
+    /* height: 30vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid #3B3F54; */
+}
+.put{
+    width: 100%;
+}
+.put button{
+    
+    width: 18.5%;
+    height: 3.3em;
+    border-top-right-radius: 0.4em; 
+    border-bottom-right-radius: 0.4em; 
+    /* border: none; */
+    background-color:  #7F00FF;
+    color: white;
+    /* box-shadow: 0px 0px 0px 2px rgb(175, 174, 174); */
+}
+.phase1i{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.res{
+    height: 4em;
+    padding: 4px;
+    border-radius: 0.2em;
+    border: none;
+    width: 98%;
+    box-shadow: 0px 0px 0px 2px rgb(175, 174, 174);
+}
+.phase1 h2{
+    display: flex;
+    color:  #7F00FF;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.unit{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 3px;
+}
+.unit strong{
+    font-weight: 400;
+
+}
+@media(max-width:767px){
+    .put{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+.phase1 input{
+    height: 3em;
+    border-top-left-radius: 0.4em; 
+    border-bottom-left-radius: 0.4em; 
+    border: none;
+    width: 60%;
+    box-shadow: 0px 0px 0px 2px rgb(175, 174, 174);
+}
+.put button{
+    /* padding: 9px; */
+    display: flex;
+    width: 35%;
+    align-items: center;
+    justify-content: center;
+    height: 3.3em;
+    border-top-right-radius: 0.4em; 
+    border-bottom-right-radius: 0.4em; 
+    /* border: none; */
+    background-color: #6c5ce7;
+    color: white;
+    /* box-shadow: 0px 0px 0px 2px rgb(175, 174, 174); */
+}
+}

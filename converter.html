@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="converter.css">
+    <link rel="icon" href="boliviainteligente-rwn1yCKzaPo-unsplash.jpg">
+    <title>Converter</title>
+
+</head>
+<body>
+  
+    <div class="phase1cover">
+        <div class="phase1">
+            <h2><i>SMART CONVERTER</i></h2>
+           <select onclick="drop()" name="" id="select">
+                <option id="pick">Select quantity</option>
+                <option id="tempp">Temperature</option>
+                <option id="lentt"> Length</option>
+                <option id="timee"> Time</option>
+                <option id="ener"> Energy</option>
+            </select> 
+        <!-- For Temperature -->
+            <div id="Tempdis" style="display: flex; gap: 6px;" >
+                <span class="unit">
+                    <strong>From</strong>
+                <select id="">
+                    <option id="disp"> Select unit</option>
+                    <option id="cel" > Celsius</option>
+                    <option id="fahr"> Fahrenheit</option>                                                                                                                                  
+                    <option id="kel">Kelvin</option>
+                </select>
+                </span>
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="82" viewBox="0 0 20 20"><path fill="currentColor" d="M12.146 3.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L14.293 7H4.5a.5.5 0 0 1 0-1h9.793l-2.147-2.146a.5.5 0 0 1 0-.708m-4.292 7a.5.5 0 0 1 0 .708L5.707 13H15.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0"/></svg></span>
+                <span class="unit">
+                    <strong>To</strong>
+                <select  name="" id="">
+                    <option id="disp1"> Select unit</option>
+                    <option id="cels"> Celsius</option>
+                    <option id="fahrs"> Fahrenheit</option>
+                    <option id="kels">Kelvin</option>
+                </select>   
+            </span>                                                                                                                                                                                                                                                                                                                                                     
+                </div>
+            <!--  For time -->
+                 <div id="timedis" style="display: flex; gap: 5px;" >
+               <span class="unit">
+                <strong>From</strong>
+                 <select name=""  id="">                    
+                    <option id="disp"> Select unit</option>
+                    <option id="sec" > Second</option>
+                    <option id="min"> Minute</option>                                                                                                                                        
+                    <option id="hr"> Hour</option>
+                    <option id="day"> Day</option>
+                    <option id="wk"> Week</option>
+                    <option id="mont"> Month</option>
+                    <option id="yr"> Year</option>
+                </select>
+               </span>
+                      <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="82" viewBox="0 0 20 20"><path fill="currentColor" d="M12.146 3.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L14.293 7H4.5a.5.5 0 0 1 0-1h9.793l-2.147-2.146a.5.5 0 0 1 0-.708m-4.292 7a.5.5 0 0 1 0 .708L5.707 13H15.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0"/></svg></span>
+               <span class="unit">
+                   <strong>To</strong>
+                 <select  name="" id="">
+                    <option id="disp1"> Select unit</option>
+                      <option id="secs" > Second</option>
+                    <option id="mins"> Minute</option>                                                                                                                                        
+                    <option id="hrs"> Hour</option>
+                    <option id="days"> Day</option>
+                    <option id="wks"> Week</option>
+                    <option id="monts"> Month</option>
+                    <option id="yrs"> Year</option>
+                </select>    
+               </span>                                                                                                                                                                                                                                                                                                                                          
+                </div>
+            <!-- For Length -->
+            <div id="lentdis" style="display: flex; gap: 6px;" >
+                <span class="unit">
+                    <strong>From</strong>
+                <select id="">
+                    <option id=""> Select unit</option>
+                    <option id="kmm"> Kilometer(km)</option>
+                    <option id="mm" > Meter(m)</option>
+                    <option id="cmm"> Centimeter(cm)</option>                                                                                                                                        
+                    <option id="mmm">Millimeter(mm)</option>
+                </select>
+                </span>
+                 <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="82" viewBox="0 0 20 20"><path fill="currentColor" d="M12.146 3.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L14.293 7H4.5a.5.5 0 0 1 0-1h9.793l-2.147-2.146a.5.5 0 0 1 0-.708m-4.292 7a.5.5 0 0 1 0 .708L5.707 13H15.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0"/></svg></span>
+                <span class="unit">
+                    <strong>To</strong>
+                <select  name="" id="">
+                    <option id=""> Select unit</option>
+                    <option id="kmms"> Kilometer(Km)</option>
+                    <option id="mms" > Meter(m)</option>
+                    <option id="cmms"> Centimeter(cm)</option>                                                                                                                                        
+                    <option id="mmms">Millimeter(mm)</option>
+                </select>   
+            </span>                                                                                                                                      </div>
+            <!-- For Energy  -->
+                        <div id="energydis" style="display: flex; gap: 6px;" >
+                <span class="unit">
+                    <strong>From</strong>
+                <select id="">
+                    <option id=""> Select unit</option>
+                    <option id="jol"> Joule(J)</option>
+                    <option id="kjol" > Kilojoule(kJ)</option>
+                    <option id="wat"> Watt-hour(Wh)</option>                                                                                                                                        
+                    <option id="kwat">Kilowatt-hour(kWh)</option>
+                </select>
+                </span>
+                 <span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="82" viewBox="0 0 20 20"><path fill="currentColor" d="M12.146 3.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L14.293 7H4.5a.5.5 0 0 1 0-1h9.793l-2.147-2.146a.5.5 0 0 1 0-.708m-4.292 7a.5.5 0 0 1 0 .708L5.707 13H15.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0"/></svg></span>
+                <span class="unit">
+                     <strong>To</strong>
+                <select id="">
+                    <option id=""> Select unit</option>
+                    <option id="jols"> Joule(J)</option>
+                    <option id="kjols" > Kilojoule(kJ)</option>
+                    <option id="wats"> Watt-hour(Wh)</option>                                                                                                                                        
+                    <option id="kwats">Kilowatt-hour(kWh)</option>
+                </select>
+                </span>                                                                                                                                                           </div>
+            <span class="put" style="width: 100%;">
+                <input type="number" id="putt" placeholder="Input Digits"> <button onclick="convat()">Convert</button>
+            </span>
+            <span class="res" id="res1">Outcome</span>
+            <span class="res" id="res2">Outcome</span>
+            <span class="res" id="res3">Outcome</span>
+            <span class="res" id="res4">Outcome</span>
+            <span class="res" id="res">Outcome</span>
+            <span class="res" id="resV">Outcome</span>
+        </div>
+    </div>
+    <script src="convert.js">
+      
+    </script>
+</body>
+</html>
