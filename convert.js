@@ -13,6 +13,7 @@ res.style.display="none"
 function drop(){
     if (tempp.selected){
         Tempdis.style.display="flex"
+        energydis.style.display="none"
         timedis.style.display="none"
         lentdis.style.display="none"
         res1.style.display="none"
